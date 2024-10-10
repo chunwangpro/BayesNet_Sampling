@@ -1,39 +1,36 @@
 # BayesNet_Sampling
 
-Bayes net prior sampling, rejection sampling, likelihood sampling, gibbs sampling and compare together.
+This project implements various sampling techniques for Bayesian Networks, including Prior Sampling, Rejection Sampling, Likelihood Weighting, and Gibbs Sampling. It also includes comparison experiments between these techniques.
 
-## File structure
+## File Structure
 
-- 
+- `main.py` : The main script for running the experiments.
+- `weather.json` : Example data file representing a Bayesian network.
+-  `error_vs_samples.png` : Output plot generated from the experiments.
 
+## Requirements
 
+- `python >= 3.9`
 
-## Implements
+## Usage
 
-Run the python file in `vscode`, the line: `if __name__ == "__main__":` will work and show the results of exprienments.
-
-Or
-
-Open a terminal at the folder and cd to a working conda environment, then run:
-
-```bash
-python python-filepath-OR-drag-python-file-into-the-terminal
-```
-
-Then press enter.
-
-Example:
+Navigate to the project directory and run the following command:
 
 ```bash
 python ./main.py
 ```
 
-Then press enter.
+The script will print the results of the sampling experiments in the terminal. Additionally, figures showing the comparison of errors vs. sample sizes will appear in a separate window.
+
+Output figures will be automatically saved in the current directory after the script finishes running.
 
 ## Results
 
-Generally, we have some print results shown in the terminal and an extra window appears with figure plottings. For multiple figures, you may need to close the current one in order to show the next.
+The program outputs:
 
-Figures will also be saved in the folder after running experiments.
+1. The estimated probabilities for the query node using different sampling techniques.
+2. A plot comparing the mean error vs. the number of samples for Rejection Sampling, Likelihood Weighting, and Gibbs Sampling.
+
+The plot is saved as `error_vs_samples.png` in the project folder and is displayed after the experiments are run. Multiple figures might be generated, and you'll need to close each one before the next appears.
 
 ![error_vs_samples](./error_vs_samples.png)
