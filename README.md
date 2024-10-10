@@ -1,4 +1,4 @@
-# BayesNet_Sampling
+# BayesNet Sampling Methods
 
 This project implements various sampling techniques for Bayesian Networks, including Prior Sampling, Rejection Sampling, Likelihood Weighting, and Gibbs Sampling. It also includes comparison experiments between these techniques.
 
