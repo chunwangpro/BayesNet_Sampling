@@ -1,0 +1,20 @@
+__pycache__
+.DS_Store
+**/.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.ipynb_checkpoints
+
+*.ipynb
+*.pdf
+*.hdf5
+*.h5
+
+
+# folders: saved models & results & logs & tensorboard
+baseline/
+docs/
+test/
+results/
+models/
+logs/
+runs/
